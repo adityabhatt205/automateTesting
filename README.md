@@ -51,3 +51,4 @@ The script will compile and then execute the C program for each test case, compa
 ### Note:
 
 Make sure to adapt the script based on the specific requirements and characteristics of the C programs being tested. Feel free to modify the test cases and program paths as needed.
+ 
