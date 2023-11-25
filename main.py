@@ -1,4 +1,5 @@
 import subprocess
+from typing import List, Dict
 
 
 def run_test(code_file, input_data):
@@ -40,14 +41,14 @@ def run_test(code_file, input_data):
 
 def main():
     # List of test cases
-    test_cases = [
+    test_cases: list[dict[str, str] | dict[str, str]] = [
         {"input": "2", "expected_output": "4\n"},
-        {"input": "4", "expected_output": "16\n"},
+        {"input": "4", "expected_output": "16\n"}
         # Add more test cases as needed
     ]
 
     # Path to the C program to be tested
-    c_program = "temp.c"
+    c_program = r"temp.c"
 
     # Run tests
     for i, test_case in enumerate(test_cases, start=1):
