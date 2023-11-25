@@ -5,7 +5,7 @@ def run_test(code_file, input_data):
     try:
         # Compile the C program using gcc
         compile_process = subprocess.Popen(
-            [f"gcc {code_file}", "-o", "a.out"],
+            ["gcc", code_file, "-o", "a.out"],
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
